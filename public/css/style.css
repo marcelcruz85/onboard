@@ -1,0 +1,201 @@
+body{
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+
+h3{
+    margin: 0px 0px 20px 10px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.container{
+    margin: 10px 20px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    float: left;
+    width: calc( 100% - 80px );
+}
+.lists{
+    width: 100%;
+    float: left;
+    display: inline-flex;
+}
+
+.lists .container{
+    float: left;
+    margin: 10px 20px;
+    max-height: 500px;
+    overflow: scroll;
+}
+.field-container{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.field-container label{
+    width: 200px;
+    float: left;
+    padding: 10px 0px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.field-container-list {
+    width: 100%;
+    height: 25px;
+}
+.field-container-list input[type="checkbox"]{
+    float: left;
+    margin: 1px 10px 0px 0px;
+}
+
+.field-container-list label{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+input[type="text"],
+select{
+    height: 35px;
+    width: calc( 100% - 220px );
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]{
+    margin: 10px 0px;
+}
+
+.action{
+    width: 100%;
+    margin: 20px;
+}
+
+.action input[type="submit"]{
+    padding: 10px 20px;
+    background-color: #0061d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.add-btn h3{
+    float: left;
+}
+.add-btn a{
+    float: right;
+    margin: 0px 15px;
+    padding: 10px 20px;
+}
+
+table{
+    width: 100%;
+}
+
+tr th{
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+    background: #e6e6e6;
+}
+
+tr td{
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+tr.terminated td{
+    background-color: #ffd2d2;
+    color: #f00;
+}
+
+td.edit{
+    text-align: right;
+}
+
+.edit-link,
+td.edit a {
+    padding: 7px 14px;
+    color: #fff;
+    background: #0558d5;
+    border-radius: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px 5px 0px 0px;
+}
+
+.cancel{
+    padding: 8px 15px;
+    border: 2px solid #0460d8;
+    color: #0460d8;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.view-container table {
+    width: 80%;
+    border-spacing: 0px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+    margin: 20px auto;
+}
+
+.view-container table thead td{
+    background: #0083c1;
+}
+
+.view-container table td{
+    border: none;
+}
+
+.view-container .logo-td{
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.view-container .logo{
+    height: 80px;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 5px solid #0083c1;
+    margin-bottom: -45px;
+    margin-top: 30px;
+}
+
+.actions-user{
+    height: 40px;
+}
+.actions-user a{
+    background-color: #ff5e00;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 10px;
+    float: right;
+    margin: 5px;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+.actions-user a.email.home{
+    float: left;
+}
+
+.actions-user a.email:hover{
+    filter: brightness(95%);
+}
+
+.actions-user a i{
+    font-size: 18px;
+    display: inline-flex;
+    vertical-align: text-bottom;
+}

@@ -1,0 +1,72 @@
+html
+  head
+    title= "Automate Onboard Process"    
+    link(rel='stylesheet', href="/css/style.css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  body
+    <form action="/users/#{data.id}" method="post">
+        <div class="container">
+        h3="User Info"
+        each val in config.field
+            <div class="field-container">
+            case val.type
+                when "select"
+                    <label for="#{val.key}">#{val.label}: </label>
+                    <select name="#{val.key}"  value="#{data[val.key]}"> 
+                    each option in val.options
+                        if data[val.key] == option.val
+                            <option selected="true">#{option.val}</option>
+                        else 
+                            <option>#{option.val}</option>
+                    </select>
+                when "checkbox"
+                    <label for="#{val.key}">#{val.label}: </label>
+                    if data[val.key]
+                        <input id="#{val.key}" type="#{val.type}" name="#{val.key}" placeholder="#{val.label}" checked>
+                    else 
+                        <input id="#{val.key}" type="#{val.type}" name="#{val.key}" placeholder="#{val.label}">
+                default
+                    <label for="#{val.key}">#{val.label}: </label>
+                    <input id="#{val.key}" type="#{val.type}" name="#{val.key}" placeholder="#{val.label}" value="#{data[val.key]}">
+            </div>
+        </div>
+        <div class="lists">
+        <div class="container">
+            h3="Distrubution List"
+            each dist in config.distributions
+                <div class="field-container-list">
+                    <label for="#{dist.key}">#{dist.label} </label>
+                    if data[dist.key]
+                        <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}" checked>
+                    else 
+                        <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}">
+                </div>
+        </div>
+        <div class="container">
+            h3="Sugar Teams"
+            each dist in config.teams
+                <div class="field-container-list">
+                    <label for="#{dist.key}">#{dist.label} </label>
+                    if data[dist.key]
+                        <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}" checked>
+                    else 
+                        <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}">
+                </div>
+        </div>
+        <div class="container">
+            h3="3cx Queues"
+            each dist in config.queues
+                <div class="field-container-list">
+                    <label for="#{dist.key}">#{dist.label} </label>
+                    if data[dist.key]
+                        <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}" checked>
+                    else 
+                        <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}">
+                </div>
+        </div>
+        </div>
+        <div class="action">
+            <input type="submit" value="Save">
+            a(href=`/users/${data.id}`, title="title").cancel Cancel
+        </div>
+    </form>

@@ -1,0 +1,56 @@
+html
+  head
+    title= "Automate Onboard Process"
+    link(rel='stylesheet', href="/css/style.css")
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src="/js/script.js")
+  body
+  <div>
+    <form action="/users" method="post">
+      <div class="container">
+        h3="User Info"
+        each val in data.field
+            <div class="field-container">
+            if val.type == "select"
+                | <label for="#{val.key}">#{val.label}: </label>
+                | <select name="#{val.key}"> 
+                each option in val.options
+                    <option>#{option.val}</option>
+                |</select>
+            else 
+                | <label for="#{val.key}">#{val.label}: </label>
+                | <input id="#{val.key}" type="#{val.type}" name="#{val.key}" placeholder="#{val.label}">
+            </div>
+      </div>
+      <div class="lists">
+      <div class="container">
+        h3="Distrubution List"
+        each dist in data.distributions
+          <div class="field-container-list">
+            <label for="#{dist.key}">#{dist.label} </label>
+            <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}">
+          </div>
+      </div>
+      <div class="container">
+        h3="Sugar Teams"
+        each dist in data.teams
+          <div class="field-container-list">
+            <label for="#{dist.key}">#{dist.label} </label>
+            <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}">
+          </div>
+      </div>
+      <div class="container">
+        h3="3cx Queues"
+        each dist in data.queues
+          <div class="field-container-list">
+            <label for="#{dist.key}">#{dist.label} </label>
+            <input id="#{dist.key}" type="#{dist.type}" name="#{dist.key}" placeholder="#{dist.label}">
+          </div>
+      </div>
+      </div>
+      <div class="action">
+        <input type="submit" value="Save">
+            a(href=`/`, title="title").cancel Cancel
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,1268 @@
+{
+    "field":[
+        {
+            "type": "text",
+            "key": "first_name",
+            "label": "First Name",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "last_name",
+            "label": "Last Name",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "extension",
+            "label": "Extension",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "direct_number",
+            "label": "Direct Number",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "computer_user",
+            "label": "Computer User",
+            "system": "computer",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "computer_password",
+            "label": "Computer Password",
+            "system": "computer",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "office_user",
+            "label": "Office / Outlook",
+            "system": "office",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "office_password",
+            "label": "Office Password",
+            "system": "office",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "sugar_user",
+            "label": "Sugar User",
+            "system": "sugar",
+            "print": true
+        },
+        {
+            "type": "text",
+            "key": "sugar_password",
+            "label": "Sugar Password",
+            "system": "sugar",
+            "print": true
+        },
+        {
+            "type": "select",
+            "key": "department",
+            "label": "Department",
+            "print": true,
+            "options": [
+                {
+                    "val": "Sales Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_uvisa"],
+                        "teams": ["team_Global", "team_CLG_Nationwide", "team_Client_Coordinator", "team_CMs_Chicago", "team_Pulaski"],
+                        "queues": ["queue_chi_sales", "queue_sales"]
+                    }
+                },
+                {
+                    "val": "Sales Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_uvisa"],
+                        "teams": ["team_Global", "team_CLG_Nationwide", "team_Client_Coordinator", "team_CMs_Mexico", "team_Mexico"],
+                        "queues": ["queue_mx_sales"]
+                    }
+                },
+                {
+                    "val": "Sales National", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_uvisa"],
+                        "teams": ["team_Global", "team_CLG_Nationwide", "team_Client_Coordinator"],
+                        "queues": ["queue_nationwide"]
+                    }
+                },
+                {
+                    "val": "Immigration Uvisa Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_uvisa"],
+                        "teams": ["team_Global", "team_Backoffice", "team_Chicago_Paralegal", "team_CLG_Nationwide", "team_Immigration_-_Paralegal", "team_Immigration_-_U_Visa"],
+                        "queues": ["queue_clg_office", "queue_immigration_uvisa"]
+                    }
+                },
+                {
+                    "val": "Immigration Uvisa Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration Court Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration Court Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration AOS Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration AOS Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration USCIS Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration USCIS Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration Investigation Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Immigration Investigation Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Criminal Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Criminal Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Family Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Family Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                }
+                ,
+                {
+                    "val": "Bankruptcy Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Bankruptcy Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                }
+                ,
+                {
+                    "val": "Personal Injury Mexico", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                },
+                {
+                    "val": "Personal Injury Chicago", 
+                    "default": {
+                        "distributions": ["dist_clg_office", "dist_immigration_court"],
+                        "teams": ["team_clg_office", "team_immigration_court"],
+                        "queues": ["queue_clg_office", "queue_immigration_court"]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "key": "status",
+            "label": "Status",
+            "print": true,
+            "options": [
+                {
+                    "val": "Active"
+                },
+                {
+                    "val": "Terminated"
+                }
+            ]
+        }
+    ],
+    "systems" : ["computer", "sugar", "office"],
+    "distributions" : [
+        {
+            "type": "checkbox",
+            "key": "dist_Secretary_of_State",
+            "label": "Secretary of State"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_3",
+            "label": "Tab 3"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Team_Leaders",
+            "label": "Team Leaders"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Careers",
+            "label": "Careers"
+        }, {
+            "type": "checkbox",
+            "key": "dist_SigNoFaxGroup",
+            "label": "SigNoFaxGroup"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Info",
+            "label": "CLG Info"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Waiver_RFE's_Team",
+            "label": "Waiver RFE's Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Team_MICK",
+            "label": "Team MICK"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Managers_CLG",
+            "label": "Managers CLG"
+        }, {
+            "type": "checkbox",
+            "key": "dist_teamleader",
+            "label": "teamleader"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Mexico_Legal",
+            "label": "Mexico Legal"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Social_Services_Fax",
+            "label": "Social Services Fax"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Immigration",
+            "label": "Immigration"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Family_group",
+            "label": "Family group"
+        }, {
+            "type": "checkbox",
+            "key": "dist_nationaldocketing",
+            "label": "nationaldocketing"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Immigration_Transfer",
+            "label": "Immigration Transfer"
+        }, {
+            "type": "checkbox",
+            "key": "dist_familydocs",
+            "label": "familydocs"
+        }, {
+            "type": "checkbox",
+            "key": "dist_legal_Mex",
+            "label": "legal Mex"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_1",
+            "label": "Tab 1"
+        }, {
+            "type": "checkbox",
+            "key": "dist_intakesundisp",
+            "label": "intakesundisp"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Administrator",
+            "label": "Administrator"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Criminal_Law_Team",
+            "label": "Criminal Law Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_App_Lead",
+            "label": "App Lead"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Pulaski_Sales",
+            "label": "Pulaski Sales"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Enrollment",
+            "label": "Enrollment"
+        }, {
+            "type": "checkbox",
+            "key": "dist_bankruptcyfax",
+            "label": "bankruptcyfax"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_4",
+            "label": "Tab 4"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Call_Center_de_El_Salvador",
+            "label": "Call Center de El Salvador"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_2",
+            "label": "Tab 2"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Managers",
+            "label": "Managers"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_IT",
+            "label": "CLG IT"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Docs",
+            "label": "Docs"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Remote_Fax",
+            "label": "Remote Fax"
+        }, {
+            "type": "checkbox",
+            "key": "dist_jdayan",
+            "label": "jdayan"
+        }, {
+            "type": "checkbox",
+            "key": "dist_testimonials",
+            "label": "testimonials"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Mexico_Sales",
+            "label": "Mexico Sales"
+        }, {
+            "type": "checkbox",
+            "key": "dist_healthfirst",
+            "label": "healthfirst"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Sales",
+            "label": "Sales"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Docketing",
+            "label": "Docketing"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Management",
+            "label": "Management"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Consular_Division",
+            "label": "Consular Division"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Social_Media",
+            "label": "CLG Social Media"
+        }, {
+            "type": "checkbox",
+            "key": "dist_hr",
+            "label": "hr"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_5",
+            "label": "Tab 5"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Family_Law_Team",
+            "label": "Family Law Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Detained",
+            "label": "Detained"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Service_Quality",
+            "label": "Service Quality"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Immg_Family_Petitions",
+            "label": "Immg Family Petitions"
+        }, {
+            "type": "checkbox",
+            "key": "dist_ImmigrationOps",
+            "label": "ImmigrationOps"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Coverage_Attorneys",
+            "label": "Coverage Attorneys"
+        }, {
+            "type": "checkbox",
+            "key": "dist_MX_Sales",
+            "label": "MX Sales"
+        }, {
+            "type": "checkbox",
+            "key": "dist_MX_Team",
+            "label": "MX Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Chicago",
+            "label": "Chicago"
+        }, {
+            "type": "checkbox",
+            "key": "dist_PI_Fax",
+            "label": "PI Fax"
+        }, {
+            "type": "checkbox",
+            "key": "dist_criminal",
+            "label": "criminal"
+        }, {
+            "type": "checkbox",
+            "key": "dist_LegalAS",
+            "label": "LegalAS"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Personal_Injury",
+            "label": "Personal Injury"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Website_Leads",
+            "label": "Website Leads"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Jobs_CLG",
+            "label": "Jobs CLG"
+        }, {
+            "type": "checkbox",
+            "key": "dist_3cx_Inbound",
+            "label": "3cx Inbound"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Sales_Missed_Calls",
+            "label": "Sales Missed Calls"
+        }, {
+            "type": "checkbox",
+            "key": "dist_IT_Support_CLG",
+            "label": "IT Support CLG"
+        }, {
+            "type": "checkbox",
+            "key": "dist_U_Visa",
+            "label": "U Visa"
+        }, {
+            "type": "checkbox",
+            "key": "dist_ASSIGNMENTS",
+            "label": "ASSIGNMENTS"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Aurora_Team",
+            "label": "Aurora Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Office",
+            "label": "CLG Office"
+        }, {
+            "type": "checkbox",
+            "key": "dist_National_Sales",
+            "label": "National Sales"
+        }, {
+            "type": "checkbox",
+            "key": "dist_IT_Support_team",
+            "label": "IT Support team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_New_Client",
+            "label": "New Client"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Legal_CLG",
+            "label": "Legal CLG"
+        }, {
+            "type": "checkbox",
+            "key": "dist_crinimalmex",
+            "label": "crinimalmex"
+        }, {
+            "type": "checkbox",
+            "key": "dist_National",
+            "label": "National"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Client_Missed_Calls",
+            "label": "Client Missed Calls"
+        }, {
+            "type": "checkbox",
+            "key": "dist_legalcall",
+            "label": "legalcall"
+        }, {
+            "type": "checkbox",
+            "key": "dist_HR_yourclg",
+            "label": "HR yourclg"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Bad_Reviews",
+            "label": "Bad Reviews"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Prospect_Missed_Calls",
+            "label": "Prospect Missed Calls"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Secretary_of_State_Cases",
+            "label": "CLG Secretary of State Cases"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Family_Team",
+            "label": "Family Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Back_Office",
+            "label": "Back Office"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Pago_de_El_Salvador",
+            "label": "Pago de El Salvador"
+        }, {
+            "type": "checkbox",
+            "key": "dist_PI_Faxes",
+            "label": "PI Faxes"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Bankruptcy",
+            "label": "Bankruptcy"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Adam_Dayan_Sig",
+            "label": "Adam Dayan Sig"
+        }, {
+            "type": "checkbox",
+            "key": "dist_PI_No_Show",
+            "label": "PI No Show"
+        }, {
+            "type": "checkbox",
+            "key": "dist_34bafd55-c6f6-4350-a7bd-9f190b57fd02",
+            "label": "34bafd55-c6f6-4350-a7bd-9f190b57fd02"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Personal_Injury",
+            "label": "Personal Injury"
+        }, {
+            "type": "checkbox",
+            "key": "dist_National",
+            "label": "National"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Appointments",
+            "label": "Appointments"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Media_305",
+            "label": "Media 305"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CRIMINAL-MX",
+            "label": "CRIMINAL-MX"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Sales",
+            "label": "Sales"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Team_Aurora",
+            "label": "Team Aurora"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Coverage_Invoice",
+            "label": "Coverage Invoice"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Aurora_Team",
+            "label": "Aurora Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_General_Fax",
+            "label": "General Fax"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Juan",
+            "label": "Juan"
+        }, {
+            "type": "checkbox",
+            "key": "dist_frontdesk",
+            "label": "frontdesk"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Notas",
+            "label": "Notas"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Media",
+            "label": "CLG Media"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Drives",
+            "label": "Drives"
+        }, {
+            "type": "checkbox",
+            "key": "dist_consular",
+            "label": "consular"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Reunión",
+            "label": "Reunión"
+        }, {
+            "type": "checkbox",
+            "key": "dist_court",
+            "label": "court"
+        }, {
+            "type": "checkbox",
+            "key": "dist_FOIARESULTS",
+            "label": "FOIARESULTS"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Faxes",
+            "label": "CLG Faxes"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Family_Team",
+            "label": "Family Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Legal_Staff",
+            "label": "Legal Staff"
+        }, {
+            "type": "checkbox",
+            "key": "dist_internal",
+            "label": "internal"
+        }, {
+            "type": "checkbox",
+            "key": "dist_docketing_CLG",
+            "label": "docketing CLG"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Immigration_Team",
+            "label": "Immigration Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_mdiraimondo",
+            "label": "mdiraimondo"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Consumer_Law_Group",
+            "label": "Consumer Law Group"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Anzur_Email_to_Rafa",
+            "label": "Anzur Email to Rafa"
+        }, {
+            "type": "checkbox",
+            "key": "dist_training",
+            "label": "training"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Support",
+            "label": "CLG Support"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Training",
+            "label": "Training"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Mexico_National",
+            "label": "Mexico National"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Abogado_App_Inquiries",
+            "label": "Abogado App Inquiries"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_6",
+            "label": "Tab 6"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Intake_Completed",
+            "label": "Intake Completed"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Criminal",
+            "label": "Criminal"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Chatbox",
+            "label": "Chatbox"
+        }, {
+            "type": "checkbox",
+            "key": "dist_IT_Support",
+            "label": "IT Support"
+        }, {
+            "type": "checkbox",
+            "key": "dist_dispositions",
+            "label": "dispositions"
+        }, {
+            "type": "checkbox",
+            "key": "dist_National_Follow_up",
+            "label": "National Follow up"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Attorneys",
+            "label": "CLG Attorneys"
+        }, {
+            "type": "checkbox",
+            "key": "dist_IT_test",
+            "label": "IT test"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Mexico_Inbound",
+            "label": "Mexico Inbound"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Mexico_Team",
+            "label": "Mexico Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Office",
+            "label": "CLG Office"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Client_Missed_Calls",
+            "label": "Client Missed Calls"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Waivers",
+            "label": "Waivers"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Remote_Intakes_Attorneys",
+            "label": "Remote Intakes Attorneys"
+        }, {
+            "type": "checkbox",
+            "key": "dist_clg",
+            "label": "clg"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Chicago_&_Mex",
+            "label": "Chicago & Mex"
+        }, {
+            "type": "checkbox",
+            "key": "dist_discovery",
+            "label": "discovery"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Tab_7",
+            "label": "Tab 7"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Record_Requests",
+            "label": "Record Requests"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Legal_Team",
+            "label": "Legal Team"
+        }, {
+            "type": "checkbox",
+            "key": "dist_CLG_Billing",
+            "label": "CLG Billing"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Aila",
+            "label": "Aila"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Imm_Fax",
+            "label": "Imm Fax"
+        }, {
+            "type": "checkbox",
+            "key": "dist_AR",
+            "label": "AR"
+        }, {
+            "type": "checkbox",
+            "key": "dist_English_Calls",
+            "label": "English Calls"
+        }, {
+            "type": "checkbox",
+            "key": "dist_Cancellations",
+            "label": "Cancellations"
+        }
+    ],
+    "teams" : [
+        {
+            "type": "checkbox",
+            "key": "team_Backoffice",
+            "label": "Backoffice"
+        }, {
+            "type": "checkbox",
+            "key": "team_CLG_Illinois",
+            "label": "CLG Illinois"
+        }, {
+            "type": "checkbox",
+            "key": "team_CLG_Nationwide",
+            "label": "CLG Nationwide"
+        }, {
+            "type": "checkbox",
+            "key": "team_Chicago_Paralegal",
+            "label": "Chicago Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Delete_Cases_Documents",
+            "label": "Delete Cases Documents"
+        }, {
+            "type": "checkbox",
+            "key": "team_Mexico_Paralegal",
+            "label": "Mexico Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Global",
+            "label": "Global"
+        }, {
+            "type": "checkbox",
+            "key": "team_Admin",
+            "label": "Admin"
+        }, {
+            "type": "checkbox",
+            "key": "team_Sales",
+            "label": "Sales"
+        }, {
+            "type": "checkbox",
+            "key": "team_National_DNQ",
+            "label": "National DNQ"
+        }, {
+            "type": "checkbox",
+            "key": "team_National_Qualified",
+            "label": "National Qualified"
+        }, {
+            "type": "checkbox",
+            "key": "team_Bankruptcy_Attorney",
+            "label": "Bankruptcy Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Bankruptcy_Paralegal",
+            "label": "Bankruptcy Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_Attorney",
+            "label": "Criminal Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_Paralegal",
+            "label": "Criminal Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_Paralegal",
+            "label": "Family Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_Attorney",
+            "label": "Family Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_Attorneys",
+            "label": "Immigration Attorneys"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_-_Paralegal",
+            "label": "Immigration - Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_Customer_Service",
+            "label": "Immigration Customer Service"
+        }, {
+            "type": "checkbox",
+            "key": "team_Labor_Attorney",
+            "label": "Labor Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Labor_Paralegal",
+            "label": "Labor Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_PI_Attorney",
+            "label": "PI Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Personal_Injury_Paralegal",
+            "label": "Personal Injury Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Attorney_Managers",
+            "label": "Attorney Managers"
+        }, {
+            "type": "checkbox",
+            "key": "team_Developers",
+            "label": "Developers"
+        }, {
+            "type": "checkbox",
+            "key": "team_Front_Desk",
+            "label": "Front Desk"
+        }, {
+            "type": "checkbox",
+            "key": "team_Attorney",
+            "label": "Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Clerks",
+            "label": "Clerks"
+        }, {
+            "type": "checkbox",
+            "key": "team_Data_Entry",
+            "label": "Data Entry"
+        }, {
+            "type": "checkbox",
+            "key": "team_Customer_Service",
+            "label": "Customer Service"
+        }, {
+            "type": "checkbox",
+            "key": "team_Sales_Team",
+            "label": "Sales Team"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_-_Paralegal",
+            "label": "Family - Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_-_Attorney",
+            "label": "Family - Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Docketing",
+            "label": "Docketing"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_-_Legal_Assistant",
+            "label": "Family - Legal Assistant"
+        }, {
+            "type": "checkbox",
+            "key": "team_Client_Coordinator",
+            "label": "Client Coordinator"
+        }, {
+            "type": "checkbox",
+            "key": "team_Management",
+            "label": "Management"
+        }, {
+            "type": "checkbox",
+            "key": "team_Paralegal",
+            "label": "Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_A/R",
+            "label": "A/R"
+        }, {
+            "type": "checkbox",
+            "key": "team_Pulaski",
+            "label": "Pulaski"
+        }, {
+            "type": "checkbox",
+            "key": "team_PI_Legal_Assistant",
+            "label": "PI Legal Assistant"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_-_U_Visa",
+            "label": "Immigration - U Visa"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_-_Admin",
+            "label": "Family - Admin"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-Secretary_of_State",
+            "label": "Criminal -Secretary of State"
+        }, {
+            "type": "checkbox",
+            "key": "team_PI_Paralegal",
+            "label": "PI Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Support",
+            "label": "Support"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_-_Consular_Process",
+            "label": "Immigration - Consular Process"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_Clerks",
+            "label": "Immigration Clerks"
+        }, {
+            "type": "checkbox",
+            "key": "team_BK_Attorney",
+            "label": "BK Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Mchargque_&_Associates",
+            "label": "Mchargque & Associates"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Legal_Assistant",
+            "label": "Criminal - Legal Assistant"
+        }, {
+            "type": "checkbox",
+            "key": "team_Berwyn",
+            "label": "Berwyn"
+        }, {
+            "type": "checkbox",
+            "key": "team_BK_Paralegal",
+            "label": "BK Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_-_Chequeo_Legal_Investigation",
+            "label": "Immigration - Chequeo Legal Investigation"
+        }, {
+            "type": "checkbox",
+            "key": "team_Remote",
+            "label": "Remote"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Paralegal",
+            "label": "Criminal - Paralegal"
+        }, {
+            "type": "checkbox",
+            "key": "team_Mexico",
+            "label": "Mexico"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Mitigation",
+            "label": "Criminal - Mitigation"
+        }, {
+            "type": "checkbox",
+            "key": "team_BK_Legal_Assistant",
+            "label": "BK Legal Assistant"
+        }, {
+            "type": "checkbox",
+            "key": "team_Inbound",
+            "label": "Inbound"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_Paralegal_(Family)",
+            "label": "Immigration Paralegal (Family)"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_-_Court",
+            "label": "Immigration - Court"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_Data_Entry",
+            "label": "Immigration Data Entry"
+        }, {
+            "type": "checkbox",
+            "key": "team_CMs_Mexico",
+            "label": "CMs Mexico"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Attorney",
+            "label": "Criminal - Attorney"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Attorney_(SOS)",
+            "label": "Criminal - Attorney (SOS)"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Global",
+            "label": "Criminal - Global"
+        }, {
+            "type": "checkbox",
+            "key": "team_Family_-_Global",
+            "label": "Family - Global"
+        }, {
+            "type": "checkbox",
+            "key": "team_Criminal_-_Admin",
+            "label": "Criminal - Admin"
+        }, {
+            "type": "checkbox",
+            "key": "team_CMs_Chicago",
+            "label": "CMs Chicago"
+        }, {
+            "type": "checkbox",
+            "key": "team_Immigration_-_Legal_Assistant",
+            "label": "Immigration - Legal Assistant"
+        }
+    ],
+    "queues" : [
+        {
+            "type": "checkbox",
+            "key": "queue_General_Inbound_Mexico",
+            "label": "General Inbound - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Criminal_Mexico",
+            "label": "Criminal - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Family_Mexico",
+            "label": "Family - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_U-Visa_Mexico",
+            "label": "Immigration U-Visa - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_Consular_Process_Mexico",
+            "label": "Immigration Consular Process - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_Court_Mexico",
+            "label": "Immigration Court - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_AOS_Mexico",
+            "label": "Immigration AOS - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_USCIS_Mexico",
+            "label": "Immigration USCIS - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_Investigation_Mexico",
+            "label": "Immigration Investigation - Mexico"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_General_Inbound_Chicago",
+            "label": "General Inbound - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Criminal_Chicago",
+            "label": "Criminal - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Family_Chicago",
+            "label": "Family - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_U-Visa_Chicago",
+            "label": "Immigration U-Visa - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_Consular_Process_Chicago",
+            "label": "Immigration Consular Process - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_Court_Chicago",
+            "label": "Immigration Court - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_AOS_Chicago",
+            "label": "Immigration AOS - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_USCIS_Chicago",
+            "label": "Immigration USCIS - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_Immigration_Investigation_Chicago",
+            "label": "Immigration Investigation - Chicago"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_MX_INBOUND",
+            "label": "MX INBOUND"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_CHI_Backoffice_Tier_2",
+            "label": "CHI Backoffice Tier 2"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_CHI_Backoffice_Tier_1",
+            "label": "CHI Backoffice Tier 1"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_nationwide",
+            "label": "Nationwide"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_sales",
+            "label": "Sales"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_chi_sales",
+            "label": "CHI Sales"
+        },
+        {
+            "type": "checkbox",
+            "key": "queue_mx_sales",
+            "label": "MX Sales"
+        }
+    ]
+}
