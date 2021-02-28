@@ -2,9 +2,14 @@ html
   head
     title= "Automate Onboard Process"
     link(rel='stylesheet', href="/css/style.css")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
     script(src="/js/script.js")
   body
+  <div class="actions-user">
+      a(href=`/`, title="Edit").email.home <i class="fas fa-home"></i> Home
+  </div>
+  img(src="https://www.consumerlaw.com/wp-content/uploads/2018/12/clg_new_u-1.png", alt="" width="300px").logo
   <div>
     <form action="/users" method="post">
       <div class="container">
