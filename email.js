@@ -1,6 +1,7 @@
-
+require('dotenv').config()
 const Email = require('email-templates');
 const userConfig = require('./public/configs/user.json');
+
 
 let SendEmail = async function SendEmail(data) {
     console.log(data);
@@ -18,7 +19,7 @@ let SendEmail = async function SendEmail(data) {
       },
       auth: {
         user: 'support@yourclg.com', // your Mailtrap username
-        pass: '' //your Mailtrap password
+        pass: process.env.EMAIL_PASS
       }
     }
     });
