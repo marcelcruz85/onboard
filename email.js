@@ -18,7 +18,7 @@ let SendEmail = async function SendEmail(data) {
       },
       auth: {
         user: 'support@yourclg.com', // your Mailtrap username
-        pass: '' //your Mailtrap password
+        pass: 'Guardianes2021##!!' //your Mailtrap password
       }
     }
     });
