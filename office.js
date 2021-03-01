@@ -4,31 +4,34 @@ let Office = async function Offce(data) {
     try {
 
         // Creating new User 
-        await driver.get('https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users/:/adduser');
-        await driver.manage().window().maximize()
-        await driver.manage().setTimeouts( { implicit: 60000 } );
-        await driver.findElement(By.css('input[data-automation-id="AddUserWizard_firstName"]')).sendKeys(data.first_name);
-        await driver.findElement(By.css('input[data-automation-id="AddUserWizard_lastName"]')).sendKeys(data.last_name);
-        await driver.findElement(By.css('input[data-automation-id="AddUserWizard_displayName"]')).sendKeys('');
-        await driver.findElement(By.css('input[data-automation-id="AddUserWizard_userName"]')).sendKeys(data.computer_user);
-        let isAutoPassOn = await (await driver.findElement(By.css('input[aria-label="Automatically create a password"]'))).isSelected()
-        console.log(isAutoPassOn);
-        if(isAutoPassOn === true){
-          await (await driver.findElement(By.xpath("//*[text()='Automatically create a password']"))).click();
-        }
-        isAutoPassOn = await driver.findElement(By.css('input[aria-label="Automatically create a password"]')).isSelected()
-        console.log(isAutoPassOn);
-        await driver.findElement(By.css('input[data-automation-id="AddUserWizard_password"]')).sendKeys(data.office_password);
-        await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
-        await (await driver.findElement(By.css('div[data-automation-id="LicenseText_Microsoft 365 Business Basic"]'))).click();
-        await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
-        await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
-        await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
+        // await driver.get('https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users/:/adduser');
+        // await driver.manage().window().maximize()
+        // await driver.manage().setTimeouts( { implicit: 60000 } );
+        // await driver.findElement(By.css('input[data-automation-id="AddUserWizard_firstName"]')).sendKeys(data.first_name);
+        // await driver.findElement(By.css('input[data-automation-id="AddUserWizard_lastName"]')).sendKeys(data.last_name);
+        // await driver.findElement(By.css('input[data-automation-id="AddUserWizard_displayName"]')).sendKeys('');
+        // await driver.findElement(By.css('input[data-automation-id="AddUserWizard_userName"]')).sendKeys(data.computer_user);
+        // let isAutoPassOn = await (await driver.findElement(By.css('input[aria-label="Automatically create a password"]'))).isSelected()
+        // console.log(isAutoPassOn);
+        // if(isAutoPassOn === true){
+        //   await (await driver.findElement(By.xpath("//*[text()='Automatically create a password']"))).click();
+        // }
+        // isAutoPassOn = await driver.findElement(By.css('input[aria-label="Automatically create a password"]')).isSelected()
+        // console.log(isAutoPassOn);
+        // await driver.findElement(By.css('input[data-automation-id="AddUserWizard_password"]')).sendKeys(data.office_password);
+        // await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
+        // await (await driver.findElement(By.css('div[data-automation-id="LicenseText_Microsoft 365 Business Basic"]'))).click();
+        // await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
+        // await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
+        // await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
         await driver.manage().setTimeouts( { implicit: 60000 } );
         await driver.get('https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users')
 
         await driver.manage().setTimeouts( { implicit: 60000 } );
         await driver.findElement(By.css('input[data-automation-id="UserListV2,CommandBarSearchInputBox"]')).sendKeys(data.office_user, Key.ENTER);
+        setTimeout(() => {
+          await driver.findElement(By.css('input[data-automation-id="UserListV2,CommandBarSearchInputBox"]')).sendKeys(data.office_user, Key.ENTER);
+        }, 5000);
 
         //*[@aria-label="Automatically create a password"]
 

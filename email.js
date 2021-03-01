@@ -39,6 +39,20 @@ let SendEmail = async function SendEmail(data) {
         console.log(err)
       })
 
+      email.send({
+        template: 'welcome',
+        message: {
+          to: 'itsupport@consumerlaw.com'
+        },
+          locals: {data: data, config: userConfig}
+      })
+      .then(() => {
+        console.log('Success')
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+
 }
 
 module.exports = SendEmail;
