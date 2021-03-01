@@ -11,6 +11,7 @@
   "dependencies": {
     "chrome-launcher": "^0.13.4",
     "chrome-remote-interface": "^0.29.0",
+    "chromedriver": "^88.0.0",
     "dotenv": "^8.2.0",
     "email-templates": "^8.0.3",
     "express": "^4.17.1",
