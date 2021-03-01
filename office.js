@@ -33,17 +33,17 @@ let Office = async function Offce(data) {
         //*[@aria-label="Automatically create a password"]
 
         await driver.findElement(By.name('first_name')).sendKeys(data.first_name);
-        await driver.findElement(By.name('last_name')).sendKeys(data.last_name);
-        await driver.findElement(By.name('phone_ext_c')).sendKeys(data.extension);
-        await driver.findElement(By.name('department')).sendKeys(data.department);
-        await driver.findElement(By.name('sms_number_c')).sendKeys(data.direct_number);
-        await driver.findElement(By.name('Users0emailAddress0')).sendKeys(data.office_user);
-        await (await driver.findElement(By.id('tab2'))).click()
-        await driver.findElement(By.name('new_password')).sendKeys(data.sugar_password);
-        await driver.findElement(By.name('confirm_new_password')).sendKeys(data.sugar_password);
-        await driver.manage().setTimeouts( { implicit: 30000 } );
-        await (await driver.findElement(By.id('SAVE_FOOTER'))).click()
-        await (await driver.findElement(By.className('container-close'))).click()
+        // await driver.findElement(By.name('last_name')).sendKeys(data.last_name);
+        // await driver.findElement(By.name('phone_ext_c')).sendKeys(data.extension);
+        // await driver.findElement(By.name('department')).sendKeys(data.department);
+        // await driver.findElement(By.name('sms_number_c')).sendKeys(data.direct_number);
+        // await driver.findElement(By.name('Users0emailAddress0')).sendKeys(data.office_user);
+        // await (await driver.findElement(By.id('tab2'))).click()
+        // await driver.findElement(By.name('new_password')).sendKeys(data.sugar_password);
+        // await driver.findElement(By.name('confirm_new_password')).sendKeys(data.sugar_password);
+        // await driver.manage().setTimeouts( { implicit: 30000 } );
+        // await (await driver.findElement(By.id('SAVE_FOOTER'))).click()
+        // await (await driver.findElement(By.className('container-close'))).click()
 
 
         // Adding Can Delete Role
