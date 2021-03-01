@@ -7,6 +7,7 @@ const port = 3000
 const open = require('open');
 const fs = require('fs');
 const Sugar = require(path.join(__dirname, '/sugar'));
+const Office = require(path.join(__dirname, '/office'));
 const SendEmail = require(path.join(__dirname, '/email'));
 const chromeLauncher = require('chrome-launcher');
 
@@ -114,6 +115,15 @@ app.get('/users/sugar/:id', (req, res) => {
         const userId = req.params['id'];
         Sugar(data[userId]);
         console.log('email res');
+        data[userId].alert = 'emailResponse'
+        res.render('view', { data: data[userId], config: userConfig} );
+    }, true);
+});
+
+app.get('/users/office/:id', (req, res) => {
+    readFile( data => {
+        const userId = req.params['id'];
+        Office(data[userId]);
         data[userId].alert = 'emailResponse'
         res.render('view', { data: data[userId], config: userConfig} );
     }, true);

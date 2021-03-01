@@ -70,7 +70,7 @@ $( document ).ready(function() {
 
     $('#last_name').keyup(function () {
         last = $(this).val();
-        last = last.split(" ", 1)
+        last = last.split(" ", 109)
         creaUser()
         console.log(userName);
     })
