@@ -4,8 +4,8 @@ const userConfig = require('./public/configs/user.json');
 
 
 let SendEmail = async function SendEmail(data) {
-    console.log(data);
     const email = new Email({
+    preview: false, 
     message: {
       from: 'support@yourclg.com'
     },
@@ -24,15 +24,21 @@ let SendEmail = async function SendEmail(data) {
     }
     });
 
-    email.send({
-        template: 'welcome',
-        message: {
-          to: 'mcruz@consumerlaw.com'
-        },
-        locals: {data: data, config: userConfig}
-    })
-    .then(console.log)
-    .catch(console.error);
+    
+      email.send({
+          template: 'welcome',
+          message: {
+            to: data.office_user
+          },
+          locals: {data: data, config: userConfig}
+      })
+      .then(() => {
+        console.log('Success')
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+
 }
 
 module.exports = SendEmail;

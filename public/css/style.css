@@ -196,7 +196,9 @@ td.edit a {
     float: right;
     margin: 5px;
     border-radius: 3px;
-    font-weight: 400;
+    font-weight: 500;
+    display: inline-flex;
+    line-height: 18px;
 }
 
 .actions-user a.email.home{
@@ -211,4 +213,5 @@ td.edit a {
     font-size: 18px;
     display: inline-flex;
     vertical-align: text-bottom;
+    margin-right: 5px;
 }

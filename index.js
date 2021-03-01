@@ -26,6 +26,7 @@ let userConfig = '';
 let dataPath = '';
 
 if (fs.existsSync(path.join(homeDir, 'onboard'))) {
+    console.log(homeDir)
     dataPath = path.join(homeDir, 'onboard/users.json');
     userConfig = require(path.join(homeDir, 'onboard/user.json'));
 } else {
@@ -81,7 +82,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/users/add', (req, res) => {
-    // SendEmail()
     res.render('add', { data: userConfig} );
 })
 
@@ -100,10 +100,12 @@ app.get('/users/:id', (req, res) => {
 });
 
 app.get('/users/email/:id', (req, res) => {
-    readFile( data => {
+    readFile( async data => {
         const userId = req.params['id'];
-        SendEmail(data[userId])
-        res.send('Email Sent')
+        await SendEmail(data[userId]);
+        console.log('email res');
+        data[userId].alert = 'emailResponse'
+        res.render('view', { data: data[userId], config: userConfig} );
     }, true);
 });
 
@@ -111,7 +113,9 @@ app.get('/users/sugar/:id', (req, res) => {
     readFile( data => {
         const userId = req.params['id'];
         Sugar(data[userId]);
-        res.send('Sugar Created')
+        console.log('email res');
+        data[userId].alert = 'emailResponse'
+        res.render('view', { data: data[userId], config: userConfig} );
     }, true);
 });
 
@@ -156,4 +160,4 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-open('http://localhost:3000', {app: ['google chrome', '--incognito']});
+open('http://localhost:3000');
