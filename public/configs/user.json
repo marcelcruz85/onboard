@@ -13,6 +13,40 @@
             "print": true
         },
         {
+            "type": "select",
+            "key": "job_title",
+            "label": "Position",
+            "print": true,
+            "options": [
+                {
+                    "val": "Attorney"
+                },
+                {
+                    "val": "Case Manager"
+                },
+                {
+                    "val": "Legal Assistant"
+                },
+                {
+                    "val": "Paralegal"
+                }
+            ]
+        },
+        {
+            "type": "select",
+            "key": "location",
+            "label": "Location",
+            "print": true,
+            "options": [
+                {
+                    "val": "Mexico"
+                },
+                {
+                    "val": "Chicago"
+                }
+            ]
+        },
+        {
             "type": "text",
             "key": "extension",
             "label": "Extension",

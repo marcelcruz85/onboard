@@ -29,7 +29,7 @@ let dataPath = '';
 if (fs.existsSync(path.join(homeDir, 'onboard'))) {
     console.log(homeDir)
     dataPath = path.join(homeDir, 'onboard/users.json');
-    userConfig = require(path.join(homeDir, 'onboard/user.json'));
+    userConfig = require(path.join(__dirname, '/public/configs/user.json'));
 } else {
     fs.mkdirSync(path.join(homeDir, 'onboard'));
     fs.writeFileSync(path.join(homeDir, 'onboard/users.json'), '{}', 'utf8', err => {
@@ -42,7 +42,7 @@ if (fs.existsSync(path.join(homeDir, 'onboard'))) {
     });
 
     dataPath = path.join(homeDir, 'onboard/users.json');
-    userConfig = require(path.join(homeDir, 'onboard/user.json'));
+    userConfig = require(path.join(__dirname, '/public/configs/user.json'));
 }
 
 const readFile = (
