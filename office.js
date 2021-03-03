@@ -19,6 +19,7 @@ let Office = async function Offce(data) {
         isAutoPassOn = await driver.findElement(By.css('input[aria-label="Automatically create a password"]')).isSelected()
         console.log(isAutoPassOn);
         await driver.findElement(By.css('input[data-automation-id="AddUserWizard_password"]')).sendKeys(data.office_password);
+        await driver.sleep(5000)
         await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
         await (await driver.findElement(By.css('div[data-automation-id="LicenseText_Microsoft 365 Business Basic"]'))).click();
         await (await driver.findElement(By.css('button[data-automation-id="addUserWizardNextBtn"]'))).click();
