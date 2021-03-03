@@ -6,7 +6,7 @@ let Office = async function Offce(data) {
         // Creating new User 
         await driver.get('https://admin.microsoft.com/Adminportal/Home?source=applauncher#/users/:/adduser');
         await driver.manage().window().maximize()
-        await driver.manage().setTimeouts( { implicit: 60000 } );
+        await driver.manage().setTimeouts( { implicit: 65000 } );
         await driver.findElement(By.css('input[data-automation-id="AddUserWizard_firstName"]')).sendKeys(data.first_name);
         await driver.findElement(By.css('input[data-automation-id="AddUserWizard_lastName"]')).sendKeys(data.last_name);
         await driver.findElement(By.css('input[data-automation-id="AddUserWizard_displayName"]')).sendKeys('');
