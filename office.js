@@ -35,7 +35,7 @@ let Office = async function Offce(data) {
         await driver.sleep(5000)
         await driver.findElement(By.css('input[data-automation-id="UserListV2,CommandBarSearchInputBox"]')).sendKeys(Key.RETURN);
         await (await driver.findElement(By.css('div[data-automationid="DetailsRow"]'))).click();
-        await (await driver.findElement(By.css('button[data-automation-id="UserDetailPanelRegion,ChangeUserPhotoLinkLink"]'))).click();
+        await driver.findElement(By.css('button[data-automation-id="UserDetailPanelRegion,ChangeUserPhotoLinkLink"]'))
         await (await driver.findElement(By.css('button[data-automation-id="UserDetailPanelRegion,EditContactInformationLink"]'))).click();
         await driver.findElement(By.css('input[data-automation-id="jobTitle"]')).sendKeys(data.job_title);
         await driver.findElement(By.css('input[data-automation-id="department"]')).sendKeys(data.department);
